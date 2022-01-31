@@ -20,6 +20,8 @@ node {
     println 'APP_KEY IS'
     println CONNECTED_APP_CONSUMER_KEY
     
+    echo "${env.HUB_ORG_DH}"
+    
     def sfdx = tool 'sfdx'
 
     stage('checkout source') {
