@@ -11,6 +11,8 @@ node {
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
 
+    echo "ABC: ${env.HUB_ORG_DH}"
+    
     println 'KEY IS'
     println JWT_KEY_CRED_ID
     println 'ORG IS'
@@ -20,7 +22,7 @@ node {
     println 'APP_KEY IS'
     println CONNECTED_APP_CONSUMER_KEY
     
-    echo "${env.HUB_ORG_DH}"
+    
     
     def sfdx = tool 'sfdx'
 
