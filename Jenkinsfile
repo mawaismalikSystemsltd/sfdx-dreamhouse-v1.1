@@ -23,7 +23,7 @@ node {
     
     
     
-    def sfdxTool = tool 'sfdx'
+    def sfdxTool = tool name: 'sfdx', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
 
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
